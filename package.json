@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
-    "next": "13.4.0",
+    "@next/bundle-analyzer": "^13.4.7",
+    "next": "^13.4.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-katex": "^3.0.1"
   }
 }

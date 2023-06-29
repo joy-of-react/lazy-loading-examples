@@ -1,7 +1,22 @@
+'use client';
 import React from 'react';
 
-function Home() {
-  return <p>Hello world!</p>;
+import Katex from '@/components/Katex';
+
+function Page() {
+  const [showMath, setShowMath] =
+    React.useState(false);
+
+  return (
+    <>
+      <button
+        onClick={() => setShowMath(!showMath)}
+      >
+        Toggle math
+      </button>
+      {showMath && <Katex math="2^4 - 4" />}
+    </>
+  );
 }
 
-export default Home;
+export default Page;
