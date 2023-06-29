@@ -5,7 +5,7 @@ import Katex from '@/components/Katex';
 
 function Page() {
   const [showMath, setShowMath] =
-    React.useState(false);
+    React.useState(true);
 
   return (
     <>

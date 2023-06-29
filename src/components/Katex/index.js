@@ -3,8 +3,11 @@
 
 import dynamic from 'next/dynamic';
 
-const LazyKatex = dynamic(() =>
-  import('./Katex')
+const LazyKatex = dynamic(
+  () => import('./Katex'),
+  {
+    loading: 'Loading...',
+  }
 );
 
 export default LazyKatex;
