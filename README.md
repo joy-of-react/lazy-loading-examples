@@ -1,5 +1,10 @@
-## Next 13 template
+## Lazy Loading in React
 
-This is a _super minimal_ starter for Next 13's App Router.
+This repository shows the code used in the “Lazy Loading” lessons of [The Joy of React](https://joyofreact.com/).
 
-Not intended for use in production. Purely used for educational reasons.
+The relevant files are:
+
+- The root `page.js`, which shows a conditionally-rendered math equation
+- the `latex-editor/page.js`, which shows an immediately-rendered and editable math equation
+
+Note that both of these examples use `React.lazy()` instead of Next's `dynamic()` function because we haven't yet covered `dynamic()`. In a real application, I recommend using `dynamic()` instead.

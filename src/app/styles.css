@@ -45,3 +45,20 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* Custom styles */
+.reveal-wrapper {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: 10rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  outline: 1px solid hsl(330deg 20% 80%);
+  outline-offset: 6px;
+  background: hsl(330deg 20% 92%);
+}
